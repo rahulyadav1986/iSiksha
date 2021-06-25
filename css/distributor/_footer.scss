@@ -1,0 +1,141 @@
+footer{
+    width: 100%; padding-top: 5rem;
+    .content{
+        .custom_heading{
+            margin-bottom: 1.5rem;
+        }
+        h2{
+            color: var(--primary-color); font-size: 4.2rem; text-transform: none;
+            &::after{
+                display: none;
+            }
+        }
+        h3{
+            color: var(--primary-light-color);
+        }
+        p{
+            color: var(--primary-color); font-size: 2.2rem; line-height: 2.8rem;
+        }
+        .custom_button{
+            margin-top: 2.5rem;
+        }
+    }
+    .main{
+        width: 100%; position: relative; padding-bottom: 1rem;
+        &::before{
+            width: 100%; height: 1px; background-color: var(--primary-light-color); position: absolute; bottom: 0; left: 0; content:"" ;
+        }
+        &::after{
+            width: 100%; height: 1px; background-color: var(--primary-light-color); position: absolute; bottom: 8px; left: 0; content: "";
+        }
+    }
+
+    .main_footer{
+        width: 100%; background-image: url(../images/ft_bg.png); width: 100%; background-size: cover; padding-top: 11rem;
+        .portion{
+            width: 100%; margin-bottom: 6rem;
+            .logo{
+                img{
+                    display: block;
+                }
+            }
+            p{
+                font-size: 1.5rem; margin-top: 1.4rem;
+            }
+            h2{
+                font-size: 2.6rem; text-transform: capitalize; display: inline-block; border-bottom: var(--primary-color) 1px solid; padding-bottom: 2px; 
+                margin-bottom: 2rem;
+            }
+            .ft_menu{
+                width: 100%; flex-wrap: wrap;
+                li{
+                    max-width: 50%; flex: 0 0 50%; padding-left: 1.6rem; position: relative; margin-bottom: 1.2rem;
+                    &:before{
+                        width: 8px; height: 8px; background-color: #000; border-radius: 100%; border-radius: 100%; position: absolute; top: 0; left: 0; bottom: 0; margin: auto; content: "";
+                    }
+                    a{
+                        color: #000;
+                    }
+                }
+            }
+            .social{
+                li{
+                    
+                    margin-right: 1.4rem;
+                }
+            }
+            .f_contacts{
+                width: 100%;
+                li{
+                    position: relative; padding-left: 3.2rem; margin-bottom: 1.8rem; font-size: 1.5rem;
+                    img{
+                        position: absolute; top: 5px; left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .copy{
+        width: 100%; height: 3.6rem; background-color: var(--grey-color3); color: #818c93; font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1023px){
+    footer {
+        .main{
+            text-align: center;
+        }
+        .content {
+            .custom_button{
+                justify-content: center; display: flex;
+            }
+        }
+        .image_avator{
+            display: inline-block; margin-bottom: 3rem;
+        }
+        .main_footer{
+            text-align: center;
+            .logo{
+                display: inline-block;
+            }
+            .social{
+                justify-content: center;
+            }
+            .portion{
+                
+                .ft_menu{
+                    width: 50%; margin: 0 auto; border-top:rgba(0,0,0,.1) 1px solid ; border-left:rgba(0,0,0,.1) 1px solid ;
+                    li{
+                         padding: 1rem 0; border-bottom:rgba(0,0,0,.1) 1px solid ; border-right:rgba(0,0,0,.1) 1px solid ; margin-bottom: 0;
+                        &::before{
+                            display: none;
+                        }
+                    }
+                }
+                .f_contacts{
+                    li{
+                        padding-top: 4rem; padding-left: 0;
+                        img{
+                            right: 0; margin: auto; top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width:500px){
+    footer {
+        
+        .image_avator{
+            width: 100%;
+        }
+        .main{
+            padding-bottom: 3rem;
+        }
+    }
+    
+}

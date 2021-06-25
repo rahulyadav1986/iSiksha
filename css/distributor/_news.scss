@@ -1,0 +1,19 @@
+.featured_news_section{
+    width: 100%;
+    .custom_heading{
+        margin-bottom: 2rem;
+    }
+    .portion{
+        width: 100%;
+        img{
+            margin-bottom: 2rem; width: 100%;
+        }
+        h2{
+            font-size: 2.2rem; margin-bottom: 1rem;
+        }
+
+        .custom_button{
+            margin-top: 3rem;
+        }
+    }
+}

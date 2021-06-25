@@ -1,0 +1,150 @@
+@font-face{
+    font-family: 'Streamster'; src: url(../fonts/Streamster.ttf), url(../fonts/Streamster.otf);
+}
+*{
+    box-sizing: border-box; margin: 0; padding: 0;
+}
+
+:root{
+    --primary-color: #0d2e60;
+    --primary-light-color: #0c70e2;
+    --gradient-style: linear-gradient(to right, #03218f, #0c70e2);
+    --gradient-style2: radial-gradient(#0c70e2, #0d2e60);
+    --gradient-style3: linear-gradient(to right, #03218f, #0c70e2);
+    --description-color: #2b2b2b;
+    --grey-color: #f0f4f6;
+    --grey-color2:#f1f1f1;
+    --grey-color3: #d1dadf;
+    --white-color:#fff; 
+}
+
+body{
+    font-family: 'Open Sans', sans-serif; font-size: 1.6rem; color: var(--description-color); line-height: 2rem; background-color: var(--white-color); 
+    
+}
+html{
+    font-size: 62.5%;
+}
+@media only screen and (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media only screen and (max-width:1023px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    html{
+        font-size: 47.5%;
+    }
+}
+@media only screen and (max-width:450px){
+    html{
+        font-size: 40%;
+    }
+}
+p{
+    margin: 0; padding: 0; 
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0; padding: 0; font-weight: 700; color: var(--primary-color);  
+}
+h4, h5, h6{
+    color: var(--primary-light-color);  
+}
+ul, li{
+    margin: 0; padding: 0;list-style: none;
+}
+a{
+    text-decoration: none; color: var(--primary-color);  
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    margin: 0; padding: 0; display: block;
+}
+
+.container{
+    width: 100%;
+}
+
+.pt{
+    padding-top: 7rem;
+}
+.pb{
+    padding-bottom: 7rem;
+}
+
+.custom_button{
+    a{
+        width: 18.5rem; height: 4.6rem; border-radius: 5rem; background-image: var(--gradient-style); color: var(--white-color); font-size: 1.6rem;
+         font-weight: 700; text-transform: capitalize; transition: all .3s ease-in-out;
+         &:hover{
+            background-image: linear-gradient(to right, #e76b3c, #c0390b);
+         }
+    }
+    input[type="submit"]{
+        width: 18.5rem; height: 4.6rem; border-radius: 5rem; background-image: var(--gradient-style); color: var(--white-color); font-size: 1.6rem;
+         font-weight: 700; text-transform: capitalize; border: var(--primary-color) 1px solid; cursor: pointer; outline-style: none;
+         &:hover{
+            background-image: linear-gradient(to right, #e76b3c, #c0390b);
+         }
+    }
+}
+.custom_button2{
+    a{
+        width: 18.5rem; height: 4.6rem; border-radius: 5rem; background-color:var(--white-color); color: var(--primary-color); font-size: 1.6rem;
+         font-weight: 700; text-transform: capitalize; position: relative; transition: all .3s ease-in-out;
+         &::before{
+             width: 6.6rem; height: 1px; background-color: var(--primary-color); position: absolute; top: 0; bottom: 0; left: -6.6rem; margin: auto; content: "";
+         }
+         &::after{
+            width: 6.6rem; height: 1px; background-color: var(--primary-color); position: absolute; top: 0; bottom: 0; right: -6.6rem; margin: auto; content: "";
+        }
+        &:hover{
+            background-color: var(--primary-color); color: var(--white-color);
+        }
+    }
+   
+}
+
+@media only screen and (max-width:600px){
+    .custom_button2{
+        a{
+            &::before{
+                width: 2rem; left: -2.2rem;
+            }
+            &::after{
+                width: 2rem; right: -2.2rem;
+            }
+        }
+    }
+}
+
+.custom_heading{
+    width: 100%; margin-bottom: 5.4rem;
+    &.center{
+        text-align: center;
+        h2{
+            &::after{
+                right: 0;
+            }
+        }
+    }
+    h2{
+        color: var(--primary-light-color); font-size: 4rem; position: relative; padding-bottom: 4px;
+        &::after{
+            width: 6.8rem; height: 1px; background-color: var(--primary-light-color); position: absolute; bottom: 0; left: 0; margin: auto; content: "";
+        }
+    }
+    h3{
+        font-size: 2.2rem; color: var(--primary-color); margin-top: 6px;
+    }
+}
+
+

@@ -1,0 +1,70 @@
+.compare_details_back{
+    width: 100%;
+    .main_section{
+        width: 100%; margin-top: 7rem;
+        .com{
+            &:nth-child(2n+2){
+                .portion{
+                    box-shadow: rgba(0,0,0,.13) 0 2.2rem 6rem;
+                    .head{
+                        height: 11rem;
+                    }
+                    .details{
+                        padding-bottom: 8rem; padding-top: 2.5rem;
+                    }
+                }
+            }
+        }
+        .portion{
+            width: 100%; position: relative; background-color: var(--grey-color); border-radius: 2rem; overflow: hidden; margin-bottom: 3rem;
+            .head{
+                width: 100%; padding: 1.8rem 0 0 0; background-image: var(--gradient-style);  text-align: center; 
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 87% 90%, 75% 84%, 65% 80%, 50% 77%, 35% 78%, 22% 83%, 10% 91%, 0 100%); height: 10rem;
+                h4{
+                    color: #fff; font-weight: 700; font-size: 2rem; 
+                    span{
+                        font-size: 1.6rem; margin-top: 5px; display: block;
+                    }
+                }
+            }
+            .details{
+                width: 100%; height: auto; padding: 1.5rem 2.2rem 3rem 2.2rem; position: relative; top: 0; 
+                .list{
+                    width: 100%; height: auto; padding-bottom: 5rem; min-height: 35rem;
+                    li{
+                        padding-left: 2.4rem; font-size: 1.4rem; margin-bottom: 2rem; background-image: url(../images/check.png); background-repeat: no-repeat;     background-position: left 5px;
+                    
+                    }
+                }
+                .price{
+                    width: 21.4rem; height: 4.7rem; background-color: #d3e0fa; margin: 0 auto 2rem; font-size: 2.1rem; font-weight: 700; color: var(--primary-color);
+                }
+                .custom_button{
+                    a{
+                        background-color: transparent; background-image: none; color: var(--primary-color); border: var(--primary-color) 1px solid;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:900px){
+    .compare_details_back{
+        .main_section {
+            margin-top: 0;
+            .com{
+                &:nth-child(2n+2) {
+                    .portion{
+                        .head{
+                            height: 10rem;
+                        }
+                        .details{
+                            padding: 1.5rem 2.2rem 3rem 2.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

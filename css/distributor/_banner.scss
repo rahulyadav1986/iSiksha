@@ -1,0 +1,207 @@
+
+.hero_section{
+    width: 100%; position: relative; height: 49.8rem;
+    &:before{
+        width: 100%; height: 100%;  background-color: var(--grey-color); position: absolute; top: 0; left: 0; content: ""; 
+        
+    }
+    &:after{
+        width: 100%; height: 25.1rem; background-image: url(../images/banner_bg_stripe.png); position: absolute; bottom: -25.1rem; left: 0; content: "";
+         background-size: contain; background-repeat: no-repeat;
+    }
+   
+    .banner_main_content_area{
+        width: 100%; position: relative; z-index: 9; padding-top: 4rem;
+        .banner_avator{
+            position: relative; left: -27.3rem; height: 48rem;
+        }
+        .content_area{
+            width: 100%; padding-top: 5rem;
+            h1{
+                font-size: 5.8rem; line-height: 5.5rem; margin-bottom: 2rem;
+            }
+            h4{
+                font-size: 1.6rem; text-transform: uppercase; font-weight: normal;
+            }
+            .button_back{
+                margin-top: 5rem;
+                .custom_button{
+                    margin-right: 2rem;
+                    &:last-child{
+                        margin-right: 0;
+                        a{
+                            background-color: transparent; background-image: none; color: var(--primary-color); border: var(--primary-color) 1px solid; transition: all .3s ease-in-out;
+                            &:hover{
+                                background-image: linear-gradient(to right, #e76b3c, #c0390b); color: #fff; border-color: #e76b3c;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.bottom_area{
+    width: 100%; position: relative; z-index: 9; padding-bottom: 22.8rem;
+    .content{
+        width: 100%;
+        h2{
+            color: var(--primary-light-color); font-size: 4rem; margin-bottom: 1rem;
+        }
+        p{
+            width: 81%; margin-bottom: 2rem;
+        }
+        a{
+            font-weight: 700; position: relative; padding-right: 4.5rem;
+            &::after{
+                width: 3.2rem; height: 1px; background-color: var(--primary-color); position: absolute; top: 1rem; right: 0; content: "";
+            }
+        }
+    }
+    .form_back{
+        width: 100%; padding: 2.4rem 4.2rem; background-color: var(--grey-color2); border-radius: 2rem; border-top: var(--primary-color) 8px solid;
+        h3{
+            font-size: 2.2rem; text-align: center; width: 100%;
+        }
+        .main_form{
+            width: 100%; display: block; margin-top: 3.2rem;
+            input{
+                width: 100%; height: 4.5rem; background-color: var(--white-color); border-radius: 5rem; padding: 0 2.4rem; border: none; outline-style: none; 
+                color: #7a788a; margin-bottom: 2.4rem; font-size: 1.4rem;
+                &::placeholder{
+                    color: #7a788a;
+                }
+            }
+            .select_back{
+                width: 100%; position: relative;
+                &::after{
+                    background-image: url(../images/down_arrow.png); width: 1.5rem; height: 1rem; background-size: contain; position: absolute; top: 0;
+                     bottom: 0; margin: auto; content: ""; right: 3rem;
+                }
+            }
+            select{
+                width: 100%; height: 4.5rem; background-color: var(--white-color); border-radius: 5rem; padding: 0 2.4rem; border: none; outline-style: none; 
+                color: #7a788a;appearance: none; position: relative; position: relative;
+               
+            }
+            .check_box{
+                width: 100%; font-size: 1.4rem; color: #7a788a; margin-top: 2.3rem; padding: 0 2rem;
+                input[type="checkbox"]{
+                    height: 1.7rem; width: auto; border-radius: 1.5rem; margin-right: 1.2rem;
+                }
+            }
+        }
+        .custom_button{
+            width: 100%; margin-top: 2.3rem;
+            input[type="submit"]{
+                width: 18.5rem; color: var(--white-color); margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.inner_banner_section{
+    width: 100%; background-image: url(../images/inner_banner_bg.png); background-repeat: no-repeat; background-size: cover;
+    .container{
+        position: relative; height: 38.6rem; 
+    }
+    .content{
+         position: relative; padding-left: 9.5rem; margin-bottom: 3rem;
+        h1, h2{
+            color: var(--white-color);
+        }
+        h1{
+            font-size: 4rem;
+        }
+        h2{
+            font-size: 2.2rem;
+        }
+    }
+    .avator{
+        position: absolute; bottom: 0; right: -7.7rem; height: 36.7rem;
+    }
+    .news_avator{
+        order: 2; margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-width:2000px){
+    .hero_section {
+        .banner_bg{
+            top: 13rem;
+        }
+    }
+    
+}
+
+@media only screen and (max-width:1500px){
+    .hero_section {
+        .banner_main_content_area {
+            .banner_avator{
+                left: -11.3rem; height: 40rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width:1365px){
+    .hero_section {
+        .banner_main_content_area {
+            .banner_avator{
+                left: -3.3rem; height: 33rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width:1023px){
+    .hero_section {
+        height: auto;
+        .banner_main_content_area {
+            text-align: center;
+            .banner_avator{
+                left: 0; height: 33rem; display: inline-block; margin-bottom: 4rem;
+            }
+            .content_area {
+                .button_back {
+                    width: 100%; justify-content: center;
+                }
+            }
+        }
+        
+    }
+    .bottom_area{
+        text-align: center; margin-top: 18rem; padding-bottom: 5rem;
+        .content{
+            margin-bottom: 4rem;
+            p{
+                width: 100%;
+            }
+        }
+    }
+    .inner_banner_section {
+        .container{
+            height: auto; padding: 5rem 0 26rem; flex-wrap: wrap;
+        }
+        .avator{
+            right: 0; height: 20rem; left: 0; margin: auto;
+        }
+        .content{
+            padding-left: 0; margin-bottom: 0; text-align: center; order: 2; max-width: 100%; flex: 0 0 100%;
+        }
+        .news_avator{
+            order: 1;
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    .hero_section {
+        .banner_main_content_area {
+            .banner_avator{
+                height: auto; width: 100%;
+            }
+        }
+    }
+}
+
