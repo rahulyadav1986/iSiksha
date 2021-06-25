@@ -72,6 +72,29 @@
     } 
  }
 
+ @media only screen and (max-width:1366px){
+    .testimonials_section{
+        .main_section{
+             .testimonial_slide_back{
+                .owl-item{
+                    padding-bottom: 4rem;
+                }
+                .slide_item {
+                    .content {
+                        padding: 3rem 2.5rem 3rem; height: 23rem;
+                        p{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+                 img{
+                     max-width: 40%;
+                 }
+             }
+        }
+    } 
+ }
+
  @media only screen and (max-width:1280px){
     .testimonials_section{
         .main_section{

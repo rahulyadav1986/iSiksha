@@ -1638,6 +1638,22 @@ header .right_details .social li {
   }
 }
 
+@media only screen and (max-width: 1366px) {
+  .testimonials_section .main_section .testimonial_slide_back .owl-item {
+    padding-bottom: 4rem;
+  }
+  .testimonials_section .main_section .testimonial_slide_back .slide_item .content {
+    padding: 3rem 2.5rem 3rem;
+    height: 23rem;
+  }
+  .testimonials_section .main_section .testimonial_slide_back .slide_item .content p {
+    font-size: 1.2rem;
+  }
+  .testimonials_section .main_section .testimonial_slide_back img {
+    max-width: 40%;
+  }
+}
+
 @media only screen and (max-width: 1280px) {
   .testimonials_section .main_section .testimonial_slide_back .slide_item .content {
     padding: 3rem 2.5rem 3rem;
@@ -1737,6 +1753,13 @@ header .right_details .social li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .about_us_section {
+    background-image: url(../images/abou_bg2.png);
+    background-size: auto;
   }
 }
 
@@ -1948,6 +1971,12 @@ footer .copy {
   background-color: var(--grey-color3);
   color: #818c93;
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1366px) {
+  footer .main_footer {
+    background-image: url(../images/ft_bg2.png);
+  }
 }
 
 @media only screen and (max-width: 1023px) {
