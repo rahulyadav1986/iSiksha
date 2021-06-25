@@ -1369,9 +1369,19 @@ header .right_details .social li {
   padding-left: 2.4rem;
   font-size: 1.4rem;
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.compare_details_back .main_section .portion .details .list li::before {
   background-image: url(../images/check.png);
+  width: 1.6rem;
+  height: 1.4rem;
   background-repeat: no-repeat;
-  background-position: left 5px;
+  background-size: contain;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  content: "";
 }
 
 .compare_details_back .main_section .portion .details .price {
