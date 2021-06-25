@@ -32,8 +32,10 @@
                 .list{
                     width: 100%; height: auto; padding-bottom: 5rem; min-height: 35rem;
                     li{
-                        padding-left: 2.4rem; font-size: 1.4rem; margin-bottom: 2rem; background-image: url(../images/check.png); background-repeat: no-repeat;     background-position: left 5px;
-                    
+                        padding-left: 2.4rem; font-size: 1.4rem; margin-bottom: 2rem; position: relative;
+                        &::before{
+                            background-image: url(../images/check.png); width: 1.6rem; height: 1.4rem; background-repeat: no-repeat; background-size: contain; position: absolute; top: 0; left: 0; content: "";
+                        }
                     }
                 }
                 .price{
